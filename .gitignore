@@ -1,37 +1,80 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Git files
+.git
+.gitignore
+.gitattributes
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDE files
+.idea/
+.vscode/
 *.iml
 *.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# Build output
+build/
+target/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+bin/
+.gradle/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Gradle wrapper (keep only what's needed)
+.gradle/
+!gradle/wrapper/
 
-### VS Code ###
-.vscode/
+# Test files and reports
+src/test/
+build/reports/
+build/test-results/
+
+# Documentation
+README.md
+HELP.md
+*.md
+docs/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Docker files
+docker-compose*.yml
+Dockerfile.dev
+.dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+Jenkinsfile
+
+# Coverage and reports
+coverage/
+.nyc_output/
+*.coverage
+htmlcov/
+
+# Dependencies (will be downloaded during build)
+node_modules/
+.pnp/
