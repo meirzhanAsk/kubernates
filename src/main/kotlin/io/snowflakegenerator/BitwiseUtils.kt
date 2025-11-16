@@ -1,4 +1,4 @@
-package io.maksymdobrynin.snowflakegenerator
+package io.snowflakegenerator
 
 internal const val LENGTH_64_BIT = 64L
 
